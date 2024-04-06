@@ -53,7 +53,6 @@ export default class ProductController {
   async findAllCategories(req: Request, res: Response) {
     try {
       const result = await productRepository.retrieveAllCategories();
-      console.log('retrieveCat', result);
       res.status(StatusCodes.OK).json({
         message: "findAllCategories OK",
         data: result,
@@ -68,7 +67,6 @@ export default class ProductController {
 
   async findOne(req: Request, res: Response) {
     const id: number = parseInt(req.params.id, 10);
-    console.log('idd',id);
     try {
       const result = await productRepository.retrieveById(id);
       if (result === null) {

@@ -58,7 +58,6 @@ class ProductRepository {
     try {
       return await Product.findAll();
     } catch (error) {
-      console.log("findAll Error", error);
       throw new Error("Failed to retrieve products!");
     }
   }
@@ -117,7 +116,6 @@ class ProductRepository {
       const affectedRows = await Product.destroy({
         where: { id: productId },
       });
-      console.log("deleted aff row", affectedRows);
       return affectedRows;
     } catch (error) {
       throw new Error("Failed to delete product!");
