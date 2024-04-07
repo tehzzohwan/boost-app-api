@@ -1,9 +1,12 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 export const config = {
-  HOST: "localhost",
-  USER: "postgres",
-  PASSWORD: " ",
-  DB: "boostapp",
-  PORT: 5432,
+  HOST: process.env.DB_HOST,
+  USER: process.env.DB_USER,
+  PASSWORD: process.env.DB_PASSWORD,
+  DB: process.env.DB_NAME,
+  PORT: process.env.PORT ? parseInt(process.env.PORT, 10) : 5432,
   pool: {
     max: 5,
     min: 0,
