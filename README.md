@@ -31,13 +31,13 @@ To install and run this application, follow these steps:
 Then app runs on http://localhost:8080
 
 ### Avalaible Routes
-- postProduct: "/products"
-- getAllProducts: "/products"
-- getProductCategories: "/products/category"
-- getProductsByCategory: "/products/category/:category"
-- getProductById: "/products/:id"
-- updateProductById: "/products/:id"
-- deleteProductById: "/products/:id"
+- Post a product: "http://localhost:8080/api/products"
+- Get all products: "http://localhost:8080/api/products"
+- Get all product categories: "http://localhost:8080/api/products/category"
+- Get products by category: "http://localhost:8080/api/products/category/:category"
+- Get a product by id: "http://localhost:8080/api/products/:id"
+- Update a product by id: "http://localhost:8080/api/products/:id"
+- delete a product by id: "http://localhost:8080/api/products/:id"
 
 ## Configuration
 
