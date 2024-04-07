@@ -28,6 +28,17 @@ To install and run this application, follow these steps:
 
 `npm run start`
 
+Then app runs on http://localhost:8080
+
+### Avalaible Routes
+- postProduct: "/products"
+- getAllProducts: "/products"
+- getProductCategories: "/products/category"
+- getProductsByCategory: "/products/category/:category"
+- getProductById: "/products/:id"
+- updateProductById: "/products/:id"
+- deleteProductById: "/products/:id"
+
 ## Configuration
 
 ### Environment Variables
