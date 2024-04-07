@@ -14,11 +14,11 @@ To install and run this application, follow these steps:
 
 ### Clone the repository:
 
-`git clone https://github.com/your-username/your-repository.git`
+`git clone https://github.com/tehzzohwan/boost-app-api.git`
 
 ### Navigate to the project directory:
 
-`cd your-repository`
+`cd boost-app-api`
 
 ### Install dependencies:
 
