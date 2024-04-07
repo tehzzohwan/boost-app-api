@@ -43,7 +43,7 @@ Then app runs on http://localhost:8080
 
 ### Environment Variables
 
-The following environment variables need to be configured:
+rename the .env.example file to .env and update the environment variables:
 
 - DB_HOST: PostgreSQL database host
 - DB_PORT: PostgreSQL database port
