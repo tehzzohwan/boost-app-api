@@ -2,6 +2,7 @@ import express, { Application } from 'express';
 import cors, { CorsOptions } from 'cors';
 import Routes from "./routes";
 import Database from "./db/index";
+import { errorHandler } from './middleware/error.middleware';
 
 
 export default class Server {
@@ -20,5 +21,6 @@ export default class Server {
     app.use(cors(corsOptions));
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
+    app.use(errorHandler); // must be last
   }
 } 

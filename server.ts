@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import express, { Application } from "express";
 import Server from "./src/index";
 import dotenv from "dotenv";
